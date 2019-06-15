@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Latin to Cyrillic Online Converter</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=yes"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="translate_title">
+        <h1>Latin text to Uzbek Cyrillic text converter</h1>
+      </div>
+
+      <div class="translate_wrap">
+        <div class="latin_box textarea_box">
+          <label for="latin_textarea">Latin text here</label>
+          <textarea
+            rows="10"
+            width="100%"
+            id="latin_textarea"
+            placeholder="Latin text here:"
+            onchange="onLatinTextChange(this.value)"
+          ></textarea>
+        </div>
+
+        <div class="cyrillic_box textarea_box">
+          <label for="cyrillic_textarea">Result:</label>
+          <textarea
+            readonly
+            width="100%"
+            rows="10"
+            id="cyrillic_textarea"
+            placeholder="Result:"
+            onclick="copy()"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="en-regex.js"></script>
+    <script type="text/javascript" src="custom.js"></script>
+  </body>
+</html>
